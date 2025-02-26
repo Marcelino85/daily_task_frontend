@@ -40,13 +40,14 @@ export default function LoginPage() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="bg-blue-500 text-white px-4 py-2 rounded w-full">Entrar</button>
-        
+      <div className="flex flex-row items-center justify-center">
       <Link href="/register">
         <p className="px-4 py-2 rounded-md">Registrar</p>
       </Link>
       <Link href="/">
-        <p className="px-4 py-2 rounded-md">Page</p>
+        <p className="px-4 py-2 rounded-md">Home</p>
       </Link>
+      </div>  
         
       </form>
     </div>

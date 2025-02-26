@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import Link from "next/link" 
 
+
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -50,12 +51,14 @@ export default function RegisterPage() {
         />
         <button className="bg-green-500 text-white px-4 py-2 rounded w-full">Registrar</button>
 
+      <div className="flex flex-row items-center justify-center">
       <Link href="/login">
         <p className="px-4 py-2 rounded-md">Login</p>        
       </Link>
       <Link href="/">
-        <p className="px-4 py-2 rounded-md">Page</p>
+        <p className="px-4 py-2 rounded-md">Home</p>
       </Link>
+      </div>
       </form>
     </div>
   );
