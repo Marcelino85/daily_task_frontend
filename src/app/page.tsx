@@ -1,7 +1,10 @@
 import Link from "next/link" 
+import Navbar from "@/components/Navbar";
 
 export default function HomePage() {
  return(
+  <>
+   <Navbar />
   <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800">
     <h1 className="text-3xl font-bold">Bem-vindo ao DailyTask!</h1>
     <p className="mt-2 text-lg">Organize suas tarefas de forma simples e eficiente.</p>
@@ -18,5 +21,6 @@ export default function HomePage() {
     </div>
   </main>
    
+  </>
  )
 }
